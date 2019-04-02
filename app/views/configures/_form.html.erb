@@ -1,0 +1,57 @@
+<%= form_with(model: configure, local: true) do |form| %>
+  <% if configure.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(configure.errors.count, "error") %> prohibited this configure from being saved:</h2>
+
+      <ul>
+      <% configure.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Valor_Do_Ponto %>
+    <%= form.number_field :ValorDoPonto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Maximo_De_Pontos_Por_Compra %>
+    <%= form.number_field :MaximoDePontosPorCompra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Validade_Dos_Pontos %>
+    <%= form.number_field :ValidadeDosPontos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Número_De_Telefone %>
+    <%= form.check_box :NumeroDeTelefone, {checked:@configure.NumeroDeTelefone = true} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Cpf %>
+    <%= form.check_box :Cpf, {checked:@configure.Cpf = true} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Email %>
+    <%= form.check_box :Email, {checked:@configure.Email} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Data_De_Nascimento %>
+    <%= form.check_box :DataDeNascimento, {checked:@configure.DataDeNascimento} %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Gênero %>
+    <%= form.check_box :Genero, {checked:@configure.Genero} %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

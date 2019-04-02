@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ValorDoPonto: 1
+  MaximoDePontosPorCompra: 1
+  ValidadeDosPontos: 1
+  NumeroDeTelefone: false
+  Cpf: false
+  Email: false
+  DataDeNascimento: false
+  Genero: false
+
+two:
+  ValorDoPonto: 1
+  MaximoDePontosPorCompra: 1
+  ValidadeDosPontos: 1
+  NumeroDeTelefone: false
+  Cpf: false
+  Email: false
+  DataDeNascimento: false
+  Genero: false

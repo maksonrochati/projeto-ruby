@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Valordoponto:</strong>
+  <%= @configure.ValorDoPonto %>
+</p>
+
+<p>
+  <strong>Maximodepontosporcompra:</strong>
+  <%= @configure.MaximoDePontosPorCompra %>
+</p>
+
+<p>
+  <strong>Validadedospontos:</strong>
+  <%= @configure.ValidadeDosPontos %>
+</p>
+
+<p>
+  <strong>Numerodetelefone:</strong>
+  <%= @configure.NumeroDeTelefone %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @configure.Cpf %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @configure.Email %>
+</p>
+
+<p>
+  <strong>Datadenascimento:</strong>
+  <%= @configure.DataDeNascimento %>
+</p>
+
+<p>
+  <strong>Genero:</strong>
+  <%= @configure.Genero %>
+</p>
+
+<%= link_to 'Editar', edit_configure_path(@configure) %> |
+<%= link_to 'Voltar', configures_path %>
